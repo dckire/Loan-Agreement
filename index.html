@@ -19,6 +19,7 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #fff;
+            position: relative;
         }
         
         .header {
@@ -104,6 +105,22 @@
             color: #666;
             border-top: 1px solid #ccc;
             padding-top: 10px;
+            position: relative;
+        }
+        
+        .beacon-link {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 8pt;
+            color: #666;
+            text-decoration: none;
+            opacity: 0.7;
+        }
+        
+        .beacon-link:hover {
+            opacity: 1;
+            text-decoration: underline;
         }
         
         @media print {
@@ -113,6 +130,13 @@
             
             body {
                 padding: 0;
+            }
+            
+            .beacon-link {
+                position: fixed;
+                bottom: 5px;
+                right: 5px;
+                font-size: 7pt;
             }
         }
     </style>
@@ -266,6 +290,11 @@
     <div class="footer">
         <p><strong>LEGAL DISCLAIMER:</strong> This is a legally binding document. Consult with an attorney if you have questions about your rights and obligations under this agreement. California usury laws limit interest rates depending on the type of loan and parties involved.</p>
         <p>Document generated on: <span id="genDate"></span></p>
+        
+        <!-- Beacon link added here -->
+        <a href="https://beacons.ai/ketohealthy" class="beacon-link" target="_blank">
+            https://beacons.ai/ketohealthy
+        </a>
     </div>
     
     <div class="no-print" style="text-align: center; margin-top: 30px; padding: 20px; background-color: #f0f0f0; border-radius: 5px;">
@@ -291,26 +320,19 @@
         
         // Auto-fill sample data (optional, can be removed)
         document.addEventListener('DOMContentLoaded', function() {
-            // Sample data for demonstration only
-            const sampleData = {
-                lenderName: "John A. Smith",
-                borrowerName: "Maria G. Johnson",
-                amount: "5,000",
-                interest: "5",
-                city: "Los Angeles"
-            };
-            
-            // This is just to show functionality - in real use, fields remain empty
             console.log("Loan agreement ready. Please fill all fields before printing.");
             
-            // Uncomment below to auto-fill sample data (for testing only)
-            /*
-            document.querySelectorAll('.field').forEach(field => {
-                if(field.previousSibling && field.previousSibling.textContent.includes("Name")) {
-                    field.textContent = sampleData.lenderName;
-                }
-            });
-            */
+            // Make beacon link open in new tab when clicked
+            const beaconLink = document.querySelector('.beacon-link');
+            if (beaconLink) {
+                beaconLink.addEventListener('click', function(e) {
+                    if (!window.print) {
+                        // Only open in new tab if not in print mode
+                        e.preventDefault();
+                        window.open(this.href, '_blank');
+                    }
+                });
+            }
         });
     </script>
 </body>
