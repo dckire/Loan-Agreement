@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Agreement - California</title>
+    <style>
+        @page {
+            size: letter;
+            margin: 2cm;
+        }
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12pt;
+            line-height: 1.5;
+            color: #000;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .title {
+            font-size: 16pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .subtitle {
+            font-size: 14pt;
+            font-weight: bold;
+            margin: 20px 0 10px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 5px;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .signature-section {
+            margin-top: 60px;
+            page-break-inside: avoid;
+        }
+        
+        .signature-block {
+            width: 45%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 40px;
+        }
+        
+        .signature-line {
+            border-top: 1px solid #000;
+            width: 80%;
+            margin-top: 60px;
+            margin-bottom: 5px;
+        }
+        
+        .field {
+            display: inline-block;
+            min-width: 150px;
+            border-bottom: 1px dotted #666;
+            padding: 0 10px;
+            margin: 0 5px;
+        }
+        
+        .checkbox {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #000;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        
+        .info-box {
+            border: 1px solid #666;
+            padding: 10px;
+            margin: 15px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .warning-box {
+            border: 2px solid #cc0000;
+            padding: 15px;
+            margin: 20px 0;
+            background-color: #fff0f0;
+        }
+        
+        .footer {
+            font-size: 10pt;
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+        
+        @media print {
+            .no-print {
+                display: none;
+            }
+            
+            body {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Personal Loan Agreement</div>
+        <div><strong>Under the Laws of the State of California</strong></div>
+        <div>Date: <span class="field" id="currentDate"></span></div>
+    </div>
+    
+    <div class="section">
+        <p><strong>THIS LOAN AGREEMENT</strong> is made and entered into in the State of California, United States of America, by and between the following parties:</p>
+    </div>
+    
+    <div class="subtitle">I. PARTIES INFORMATION</div>
+    
+    <div class="section">
+        <p><strong>LENDER (CREDITOR):</strong></p>
+        <p>Full Name: <span class="field">__________________________</span></p>
+        <p>Address: <span class="field">_________________________________</span></p>
+        <p>City: <span class="field">___________________</span> State: CA ZIP: <span class="field">_______</span></p>
+        <p>Phone: <span class="field">_________________</span> Email: <span class="field">_________________</span></p>
+    </div>
+    
+    <div class="section">
+        <p><strong>BORROWER (DEBTOR):</strong></p>
+        <p>Full Name: <span class="field">__________________________</span></p>
+        <p>Address: <span class="field">_________________________________</span></p>
+        <p>City: <span class="field">___________________</span> State: CA ZIP: <span class="field">_______</span></p>
+        <p>Phone: <span class="field">_________________</span> Email: <span class="field">_________________</span></p>
+    </div>
+    
+    <div class="subtitle">II. LOAN TERMS</div>
+    
+    <div class="warning-box">
+        <p><strong>IMPORTANT NOTICE:</strong> This agreement is subject to California usury laws (California Civil Code §§ 1916-1916.12) which limit permissible interest rates. Loans between individuals are generally subject to different limits than commercial loans.</p>
+    </div>
+    
+    <div class="section">
+        <p>1. <strong>LOAN AMOUNT (PRINCIPAL):</strong> The sum of <span class="field">___________________</span> United States Dollars (US$<span class="field">__________</span>).</p>
+        
+        <p>2. <strong>INTEREST RATE:</strong> An interest rate of <span class="field">_______</span>% per annum, not exceeding the limits permitted by California law.</p>
+        
+        <p>3. <strong>REPAYMENT TERM:</strong> 
+            <br>Start Date: <span class="field">___________________</span>
+            <br>Maturity Date: <span class="field">___________________</span>
+            <br>Total Duration: <span class="field">______</span> months/years.
+        </p>
+        
+        <p>4. <strong>PAYMENT METHOD:</strong>
+            <br><span class="checkbox"></span> Lump sum payment at maturity (Principal + Interest)
+            <br><span class="checkbox"></span> Periodic monthly/semi-annual/annual payments
+        </p>
+        
+        <p>If periodic payments apply:
+            <br>Number of payments: <span class="field">_______</span>
+            <br>Amount of each payment: US$<span class="field">__________</span>
+            <br>Payment due date: The <span class="field">_______</span> day of each month
+        </p>
+        
+        <p>5. <strong>LATE PAYMENT INTEREST:</strong> In case of late payment, a late interest of <span class="field">_______</span>% per annum will apply to the overdue amount, in accordance with California Civil Code § 3289.</p>
+        
+        <p>6. <strong>FUNDS DELIVERY METHOD:</strong>
+            <br><span class="checkbox"></span> Bank transfer to account: <span class="field">___________________</span>
+            <br><span class="checkbox"></span> Certified check
+            <br><span class="checkbox"></span> Cash (with signed receipt attached)
+        </p>
+    </div>
+    
+    <div class="subtitle">III. REPRESENTATIONS AND AGREEMENTS</div>
+    
+    <div class="section">
+        <p>1. The BORROWER represents that the funds will be used for: <span class="field">_________________________________</span>.</p>
+        
+        <p>2. Both parties agree that this loan is an unsecured promissory note, unless otherwise specified in a separate document.</p>
+        
+        <p>3. The BORROWER agrees to notify in writing any change of address within 10 days following the change.</p>
+        
+        <p>4. The LENDER represents that the loaned funds do not come from illegal activities and that they are lending their own funds.</p>
+    </div>
+    
+    <div class="subtitle">IV. DEFAULT AND REMEDIES</div>
+    
+    <div class="section">
+        <p>1. If the BORROWER fails to make payment by the due date, the LENDER shall have the right to:</p>
+        <ul>
+            <li>Demand payment of the entire outstanding principal and accrued interest</li>
+            <li>Collect late payment interest as stipulated</li>
+            <li>If necessary, proceed with legal action to recover the debt</li>
+        </ul>
+        
+        <p>2. The BORROWER shall be responsible for all reasonable collection costs, including attorney's fees as permitted by California law.</p>
+    </div>
+    
+    <div class="subtitle">V. SPECIFIC CALIFORNIA LEGAL PROVISIONS</div>
+    
+    <div class="section">
+        <p>1. <strong>GOVERNING LAW:</strong> This agreement shall be governed by and construed in accordance with the laws of the State of California.</p>
+        
+        <p>2. <strong>VENUE:</strong> For any action or proceeding arising out of this agreement, the parties submit to the exclusive jurisdiction of the courts of <span class="field">___________________</span> County, California.</p>
+        
+        <p>3. <strong>WAIVER:</strong> The waiver of any breach of the terms of this agreement shall not be considered a waiver of subsequent breaches.</p>
+        
+        <p>4. <strong>SEVERABILITY:</strong> If any provision of this agreement is declared invalid or unenforceable, the remaining provisions shall continue to be valid and enforceable.</p>
+        
+        <p>5. <strong>ENTIRE AGREEMENT:</strong> This document constitutes the entire agreement between the parties and supersedes all prior agreements or understandings, whether oral or written.</p>
+        
+        <p>6. <strong>USURY COMPLIANCE:</strong> Notwithstanding any provision herein, the total interest charged shall not exceed the maximum rate allowed by California law. If any interest provision violates California usury laws, the interest rate shall be automatically reduced to the maximum legal rate.</p>
+    </div>
+    
+    <div class="signature-section">
+        <div class="subtitle">VI. SIGNATURES</div>
+        
+        <p>The parties acknowledge having read and understood all terms of this agreement and agree to be legally bound by them.</p>
+        
+        <p>DELIVERED AND RECEIVED: Both parties acknowledge that the LENDER has delivered and the BORROWER has received the full loan amount on the date of signing this agreement.</p>
+        
+        <div class="signature-block">
+            <p><strong>LENDER (CREDITOR)</strong></p>
+            <div class="signature-line"></div>
+            <p>Signature</p>
+            <div style="margin-top: 30px;"></div>
+            <div class="signature-line"></div>
+            <p>Printed Name</p>
+            <div style="margin-top: 30px;"></div>
+            <div class="signature-line"></div>
+            <p>Date</p>
+        </div>
+        
+        <div class="signature-block" style="margin-left: 9%;">
+            <p><strong>BORROWER (DEBTOR)</strong></p>
+            <div class="signature-line"></div>
+            <p>Signature</p>
+            <div style="margin-top: 30px;"></div>
+            <div class="signature-line"></div>
+            <p>Printed Name</p>
+            <div style="margin-top: 30px;"></div>
+            <div class="signature-line"></div>
+            <p>Date</p>
+        </div>
+    </div>
+    
+    <div class="info-box">
+        <p><strong>FUNDS RECEIPT (Separate - To be signed if payment is in cash)</strong></p>
+        <p>I, <span class="field">__________________________</span>, BORROWER, acknowledge receipt from <span class="field">__________________________</span>, LENDER, the total amount of US$<span class="field">__________</span> as loan regulated by the agreement dated <span class="field">___________________</span>.</p>
+        <p>Date: <span class="field">___________________</span></p>
+        <p>Borrower's Signature: <span class="field">__________________________</span></p>
+    </div>
+    
+    <div class="footer">
+        <p><strong>LEGAL DISCLAIMER:</strong> This is a legally binding document. Consult with an attorney if you have questions about your rights and obligations under this agreement. California usury laws limit interest rates depending on the type of loan and parties involved.</p>
+        <p>Document generated on: <span id="genDate"></span></p>
+    </div>
+    
+    <div class="no-print" style="text-align: center; margin-top: 30px; padding: 20px; background-color: #f0f0f0; border-radius: 5px;">
+        <h3>Instructions to Save as PDF</h3>
+        <p>1. Complete all blank fields in the agreement</p>
+        <p>2. Press <strong>Ctrl+P</strong> (Windows) or <strong>Cmd+P</strong> (Mac)</p>
+        <p>3. In print settings, select "Save as PDF" as destination</p>
+        <p>4. Adjust margins if needed and click "Save"</p>
+        <button onclick="window.print()" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-top: 10px;">
+            Print or Save as PDF
+        </button>
+        <p style="margin-top: 15px; font-size: 14px; color: #666;">
+            <strong>Note:</strong> For best results, use Chrome or Edge browsers.
+        </p>
+    </div>
+    
+    <script>
+        // Set current date
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('currentDate').textContent = now.toLocaleDateString('en-US', options);
+        document.getElementById('genDate').textContent = now.toLocaleDateString('en-US', options);
+        
+        // Auto-fill sample data (optional, can be removed)
+        document.addEventListener('DOMContentLoaded', function() {
+            // Sample data for demonstration only
+            const sampleData = {
+                lenderName: "John A. Smith",
+                borrowerName: "Maria G. Johnson",
+                amount: "5,000",
+                interest: "5",
+                city: "Los Angeles"
+            };
+            
+            // This is just to show functionality - in real use, fields remain empty
+            console.log("Loan agreement ready. Please fill all fields before printing.");
+            
+            // Uncomment below to auto-fill sample data (for testing only)
+            /*
+            document.querySelectorAll('.field').forEach(field => {
+                if(field.previousSibling && field.previousSibling.textContent.includes("Name")) {
+                    field.textContent = sampleData.lenderName;
+                }
+            });
+            */
+        });
+    </script>
+</body>
+</html>
